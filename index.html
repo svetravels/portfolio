@@ -693,7 +693,8 @@
         <div class="comp-pane left"></div>
         <div class="comp-pane right">
           <div class="form-wrap-3 w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="65664c0cf66fb9231b6e5c97" data-wf-element-id="a27fef63-4810-96e7-40cc-9a961e8ade18">
+            <form id="email-form" name="email-form" data-name="Email Form" method="POST" action="https://api.web3forms.com/submit" class="form" data-wf-page-id="65664c0cf66fb9231b6e5c97" data-wf-element-id="a27fef63-4810-96e7-40cc-9a961e8ade18">
+              <input type="hidden" name="access_key" value="585c97cd-4958-42d7-81e9-87d40d37d939">
               <div class="ios-style-reset w-embed">
                 <style>
 input[type=text], input[type=email], input[type=tel]{   
@@ -706,10 +707,11 @@ input[type=text], input[type=email], input[type=tel]{
 </style>
               </div>
               <h1 class="form-heading">Book your first Ride.</h1>
-              <div class="field-wrap"><label for="name" class="form-field-label">Name</label><input class="form-field w-input" autocomplete="off" maxlength="256" name="name" data-name="Name" placeholder="John Smith" type="text" id="name" required=""></div>
-              <div class="field-wrap"><label for="email" class="form-field-label">Email</label><input class="form-field w-input" autocomplete="off" maxlength="256" name="email" data-name="Email" placeholder="your@email.com" type="text" id="email" required=""></div>
-              <div class="field-wrap"><label for="phone" class="form-field-label">Phone</label><input class="form-field w-input" autocomplete="off" maxlength="256" name="phone" data-name="Phone" placeholder="xxx-xxx-xxxx" type="text" id="phone" required=""></div><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Submit">
+              <div class="field-wrap"><label for="name" class="form-field-label">Name</label><input type="text" class="form-field w-input" autocomplete="off" maxlength="256" name="name" data-name="Name" placeholder="John Smith" id="name" required=""></div>
+              <div class="field-wrap"><label for="email" class="form-field-label">Email</label><input type="text" class="form-field w-input" autocomplete="off" maxlength="256" name="email" data-name="Email" placeholder="your@email.com" id="email" required=""></div>
+              <div class="field-wrap"><label for="phone" class="form-field-label">Phone</label><input type="text" class="form-field w-input" autocomplete="off" maxlength="256" name="phone" data-name="Phone" placeholder="xxx-xxx-xxxx" id="phone" required=""></div><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-3 w-button">
             </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
